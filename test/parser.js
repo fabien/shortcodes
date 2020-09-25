@@ -354,5 +354,18 @@ describe("ShortcodeParser", function () {
         "Some NESTED [SHORTCODE] OR [SHORTCODE /] OR [SHORTCODE]...[/SHORTCODE] should be ignored."
       );
     });
+    
+    it("should handle options", async function () {
+      var parser = ShortcodeParser();
+      parser.add("test", async function (opts, content, options) {
+        return options.uppercase ? content.toUpperCase() : content.toLowerCase();
+      });
+      
+      let result = await parser.parse("Some [test]Content[/test]", { uppercase: true });
+      result.should.eql("Some CONTENT");
+      
+      result = await parser.parse("Some [test]Content[/test]", { uppercase: false });
+      result.should.eql("Some content");
+    });
   });
 });

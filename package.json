@@ -1,6 +1,6 @@
 {
-  "name": "@elderjs/shortcodes",
-  "version": "1.0.7",
+  "name": "@atelierfabien/shortcodes",
+  "version": "1.0.8",
   "description": "An Shortcode parser with support of arguments, key-value attributes, nesting, and async.",
   "main": "lib/parser.js",
   "directories": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Elderjs/shortcodes.git"
+    "url": "https://github.com/fabien/shortcodes.git"
   },
   "jshintConfig": {
     "esversion": 8
@@ -29,9 +29,9 @@
   "author": "META Platform team <www.meta-platform.com> & ElderGuide.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Elderjs/shortcodes/issues"
+    "url": "https://github.com/fabien/shortcodes/issues"
   },
-  "homepage": "https://github.com/Elderjs/shortcodes",
+  "homepage": "https://github.com/fabien/shortcodes",
   "devDependencies": {
     "istanbul": "^0.3.17",
     "jshint": "^2.8.0",
